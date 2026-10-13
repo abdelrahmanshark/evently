@@ -245,6 +245,9 @@ class AppLocalizationsAr extends AppLocalizations {
   String get please_enter_event_time => 'برجاء ادخال وقت الفعالية';
 
   @override
+  String get please_select_event_location => 'برجاء اختيار موقع الفعالية';
+
+  @override
   String get event_added => 'تمت اضافة الفعالية';
 
   @override
@@ -278,4 +281,32 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get my_event => 'فعالياتي';
+
+  @override
+  String get something_went_wrong => 'حدث خطأ ما، برجاء المحاولة مرة أخرى';
+
+  @override
+  String get no_events_found => 'لا توجد فعاليات';
+
+  @override
+  String get unknown_location => 'موقع غير معروف';
+
+  @override
+  String get event_updated => 'تم تحديث الفعالية';
+
+  @override
+  String get event_deleted => 'تم حذف الفعالية';
+
+  @override
+  String get delete_event => 'حذف الفعالية';
+
+  @override
+  String get delete_event_confirmation =>
+      'هل أنت متأكد أنك تريد حذف هذه الفعالية؟';
+
+  @override
+  String get delete => 'حذف';
+
+  @override
+  String get cancel => 'إلغاء';
 }

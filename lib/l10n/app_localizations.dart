@@ -560,6 +560,12 @@ abstract class AppLocalizations {
   /// **'please enter event time'**
   String get please_enter_event_time;
 
+  /// No description provided for @please_select_event_location.
+  ///
+  /// In en, this message translates to:
+  /// **'please select event location'**
+  String get please_select_event_location;
+
   /// No description provided for @event_added.
   ///
   /// In en, this message translates to:
@@ -625,6 +631,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'My Events'**
   String get my_event;
+
+  /// No description provided for @something_went_wrong.
+  ///
+  /// In en, this message translates to:
+  /// **'Something went wrong, please try again'**
+  String get something_went_wrong;
+
+  /// No description provided for @no_events_found.
+  ///
+  /// In en, this message translates to:
+  /// **'No events found'**
+  String get no_events_found;
+
+  /// No description provided for @unknown_location.
+  ///
+  /// In en, this message translates to:
+  /// **'Unknown location'**
+  String get unknown_location;
+
+  /// No description provided for @event_updated.
+  ///
+  /// In en, this message translates to:
+  /// **'Event Updated'**
+  String get event_updated;
+
+  /// No description provided for @event_deleted.
+  ///
+  /// In en, this message translates to:
+  /// **'Event Deleted'**
+  String get event_deleted;
+
+  /// No description provided for @delete_event.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete Event'**
+  String get delete_event;
+
+  /// No description provided for @delete_event_confirmation.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to delete this event?'**
+  String get delete_event_confirmation;
+
+  /// No description provided for @delete.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete'**
+  String get delete;
+
+  /// No description provided for @cancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get cancel;
 }
 
 class _AppLocalizationsDelegate
