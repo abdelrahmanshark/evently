@@ -1,6 +1,5 @@
 // ignore: unused_import
 import 'package:intl/intl.dart' as intl;
-
 import 'app_localizations.dart';
 
 // ignore_for_file: type=lint
@@ -246,6 +245,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get please_enter_event_time => 'please enter event time';
 
   @override
+  String get please_select_event_location => 'please select event location';
+
+  @override
   String get event_added => 'Event Added';
 
   @override
@@ -279,4 +281,32 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get my_event => 'My Events';
+
+  @override
+  String get something_went_wrong => 'Something went wrong, please try again';
+
+  @override
+  String get no_events_found => 'No events found';
+
+  @override
+  String get unknown_location => 'Unknown location';
+
+  @override
+  String get event_updated => 'Event Updated';
+
+  @override
+  String get event_deleted => 'Event Deleted';
+
+  @override
+  String get delete_event => 'Delete Event';
+
+  @override
+  String get delete_event_confirmation =>
+      'Are you sure you want to delete this event?';
+
+  @override
+  String get delete => 'Delete';
+
+  @override
+  String get cancel => 'Cancel';
 }

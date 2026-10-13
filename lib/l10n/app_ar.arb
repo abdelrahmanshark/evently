@@ -76,6 +76,7 @@
   "please_enter_event_discription": "برجاء ادخال وصف للفعالية",
   "please_enter_event_date": "برجاء ادخال تاريخ الفعالية",
   "please_enter_event_time": "برجاء ادخال وقت الفعالية",
+  "please_select_event_location": "برجاء اختيار موقع الفعالية",
   "event_added": "تمت اضافة الفعالية",
   "event_added_to_favorite": "تمت اضافة الفعالية للمفضلة",
   "event_removed_from_favorite": "تمت ازالة الفعالية من المضفلة",
@@ -86,5 +87,14 @@
   "the_account_already_exists_for_that_email": "هذا البريد الالكتروني مسجل بالفعل",
   "wrong_email_or_password": "البريد الالكتروني أو كلمة المرور غير صحيحين",
   "go_to_my_events": "الانتقال الى فعالياتي ",
-  "my_event": "فعالياتي"
+  "my_event": "فعالياتي",
+  "something_went_wrong": "حدث خطأ ما، برجاء المحاولة مرة أخرى",
+  "no_events_found": "لا توجد فعاليات",
+  "unknown_location": "موقع غير معروف",
+  "event_updated": "تم تحديث الفعالية",
+  "event_deleted": "تم حذف الفعالية",
+  "delete_event": "حذف الفعالية",
+  "delete_event_confirmation": "هل أنت متأكد أنك تريد حذف هذه الفعالية؟",
+  "delete": "حذف",
+  "cancel": "إلغاء"
 }
