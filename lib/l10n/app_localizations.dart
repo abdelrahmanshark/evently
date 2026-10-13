@@ -529,6 +529,162 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'please enter your name'**
   String get please_enter_your_name;
+
+  /// No description provided for @done.
+  ///
+  /// In en, this message translates to:
+  /// **'Done'**
+  String get done;
+
+  /// No description provided for @please_enter_event_title.
+  ///
+  /// In en, this message translates to:
+  /// **'please enter event title'**
+  String get please_enter_event_title;
+
+  /// No description provided for @please_enter_event_discription.
+  ///
+  /// In en, this message translates to:
+  /// **'please enter event discription'**
+  String get please_enter_event_discription;
+
+  /// No description provided for @please_enter_event_date.
+  ///
+  /// In en, this message translates to:
+  /// **'please enter event date'**
+  String get please_enter_event_date;
+
+  /// No description provided for @please_enter_event_time.
+  ///
+  /// In en, this message translates to:
+  /// **'please enter event time'**
+  String get please_enter_event_time;
+
+  /// No description provided for @please_select_event_location.
+  ///
+  /// In en, this message translates to:
+  /// **'please select event location'**
+  String get please_select_event_location;
+
+  /// No description provided for @event_added.
+  ///
+  /// In en, this message translates to:
+  /// **'Event Added'**
+  String get event_added;
+
+  /// No description provided for @event_added_to_favorite.
+  ///
+  /// In en, this message translates to:
+  /// **'Event Added to favorite'**
+  String get event_added_to_favorite;
+
+  /// No description provided for @event_removed_from_favorite.
+  ///
+  /// In en, this message translates to:
+  /// **'Event Remove From Favorite'**
+  String get event_removed_from_favorite;
+
+  /// No description provided for @loading.
+  ///
+  /// In en, this message translates to:
+  /// **'Loading'**
+  String get loading;
+
+  /// No description provided for @register_Successfully.
+  ///
+  /// In en, this message translates to:
+  /// **'Register Successfully'**
+  String get register_Successfully;
+
+  /// No description provided for @login_Successfully.
+  ///
+  /// In en, this message translates to:
+  /// **'Login Successfully'**
+  String get login_Successfully;
+
+  /// No description provided for @the_password_provided_is_too_weak.
+  ///
+  /// In en, this message translates to:
+  /// **'The password provided is too weak'**
+  String get the_password_provided_is_too_weak;
+
+  /// No description provided for @the_account_already_exists_for_that_email.
+  ///
+  /// In en, this message translates to:
+  /// **'The account already exists for that email.'**
+  String get the_account_already_exists_for_that_email;
+
+  /// No description provided for @wrong_email_or_password.
+  ///
+  /// In en, this message translates to:
+  /// **'Wrong email or password'**
+  String get wrong_email_or_password;
+
+  /// No description provided for @go_to_my_events.
+  ///
+  /// In en, this message translates to:
+  /// **'Go to my event'**
+  String get go_to_my_events;
+
+  /// No description provided for @my_event.
+  ///
+  /// In en, this message translates to:
+  /// **'My Events'**
+  String get my_event;
+
+  /// No description provided for @something_went_wrong.
+  ///
+  /// In en, this message translates to:
+  /// **'Something went wrong, please try again'**
+  String get something_went_wrong;
+
+  /// No description provided for @no_events_found.
+  ///
+  /// In en, this message translates to:
+  /// **'No events found'**
+  String get no_events_found;
+
+  /// No description provided for @unknown_location.
+  ///
+  /// In en, this message translates to:
+  /// **'Unknown location'**
+  String get unknown_location;
+
+  /// No description provided for @event_updated.
+  ///
+  /// In en, this message translates to:
+  /// **'Event Updated'**
+  String get event_updated;
+
+  /// No description provided for @event_deleted.
+  ///
+  /// In en, this message translates to:
+  /// **'Event Deleted'**
+  String get event_deleted;
+
+  /// No description provided for @delete_event.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete Event'**
+  String get delete_event;
+
+  /// No description provided for @delete_event_confirmation.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to delete this event?'**
+  String get delete_event_confirmation;
+
+  /// No description provided for @delete.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete'**
+  String get delete;
+
+  /// No description provided for @cancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get cancel;
 }
 
 class _AppLocalizationsDelegate

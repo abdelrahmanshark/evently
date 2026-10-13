@@ -1,6 +1,5 @@
 // ignore: unused_import
 import 'package:intl/intl.dart' as intl;
-
 import 'app_localizations.dart';
 
 // ignore_for_file: type=lint
@@ -229,4 +228,85 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get please_enter_your_name => 'يرجى كتابة الاسم';
+
+  @override
+  String get done => 'تم';
+
+  @override
+  String get please_enter_event_title => 'برجاء ادخال عنوان للفعالية';
+
+  @override
+  String get please_enter_event_discription => 'برجاء ادخال وصف للفعالية';
+
+  @override
+  String get please_enter_event_date => 'برجاء ادخال تاريخ الفعالية';
+
+  @override
+  String get please_enter_event_time => 'برجاء ادخال وقت الفعالية';
+
+  @override
+  String get please_select_event_location => 'برجاء اختيار موقع الفعالية';
+
+  @override
+  String get event_added => 'تمت اضافة الفعالية';
+
+  @override
+  String get event_added_to_favorite => 'تمت اضافة الفعالية للمفضلة';
+
+  @override
+  String get event_removed_from_favorite => 'تمت ازالة الفعالية من المضفلة';
+
+  @override
+  String get loading => 'يتم التحميل';
+
+  @override
+  String get register_Successfully => 'تم تسجيل الحساب بنجاح';
+
+  @override
+  String get login_Successfully => 'تم تسجيل الدخول بنجاح';
+
+  @override
+  String get the_password_provided_is_too_weak => 'كلمة المرور ضعيفة';
+
+  @override
+  String get the_account_already_exists_for_that_email =>
+      'هذا البريد الالكتروني مسجل بالفعل';
+
+  @override
+  String get wrong_email_or_password =>
+      'البريد الالكتروني أو كلمة المرور غير صحيحين';
+
+  @override
+  String get go_to_my_events => 'الانتقال الى فعالياتي ';
+
+  @override
+  String get my_event => 'فعالياتي';
+
+  @override
+  String get something_went_wrong => 'حدث خطأ ما، برجاء المحاولة مرة أخرى';
+
+  @override
+  String get no_events_found => 'لا توجد فعاليات';
+
+  @override
+  String get unknown_location => 'موقع غير معروف';
+
+  @override
+  String get event_updated => 'تم تحديث الفعالية';
+
+  @override
+  String get event_deleted => 'تم حذف الفعالية';
+
+  @override
+  String get delete_event => 'حذف الفعالية';
+
+  @override
+  String get delete_event_confirmation =>
+      'هل أنت متأكد أنك تريد حذف هذه الفعالية؟';
+
+  @override
+  String get delete => 'حذف';
+
+  @override
+  String get cancel => 'إلغاء';
 }

@@ -1,8 +1,13 @@
 class AppRoutes {
-  static const String initScreenRouteName = 'initScreen';
-  static const String introScreensRouteName = 'introScreens';
-  static const String loginScreensRouteName = 'Login Screen';
-  static const String registerScreensRouteName = 'Register Screen';
-  static const String profileTabRouteName = 'Profile tab';
-  static const String homeScreenRouteName = 'Home Screen';
+  static const String splashRouteName = 'splash';
+  static const String initRouteName = 'init';
+  static const String introRouteName = 'intro';
+  static const String loginRouteName = 'login';
+  static const String registerRouteName = 'register';
+  static const String homeRouteName = 'home';
+  static const String addEventRouteName = 'addEvent';
+  static const String eventMapRouteName = 'eventMap';
+  static const String myEventsRouteName = 'myEvents';
+  static const String eventDetailsRouteName = 'eventDetails';
+  static const String editEventRouteName = 'editEvent';
 }
