@@ -1,4 +1,5 @@
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
+import 'package:evently/providers/map_provider.dart';
 import 'package:evently/ui/home/tabs/favoraite_tab/favoraite_tab.dart';
 import 'package:evently/ui/home/tabs/home_tab/home_tab.dart';
 import 'package:evently/ui/home/tabs/map_tab/map_tab.dart';
@@ -7,6 +8,7 @@ import 'package:evently/utils/app_colors.dart';
 import 'package:evently/utils/app_routes.dart';
 import 'package:evently/utils/app_styles.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 import '../../l10n/app_localizations.dart';
 
@@ -31,11 +33,15 @@ class _HomeScreenState extends State<HomeScreen> {
     Icons.favorite_border,
     Icons.person_outline,
   ];
-  List<Widget> tabs = [HomeTab(), MapTab(), FavoriteTab(), ProfileTab()];
+  List<Widget> tabs = [
+    HomeTab(),
+    ChangeNotifierProvider(
+        create: (context) => MapProvider(),
+        child: MapTab()),
+    FavoriteTab(),
+    ProfileTab()];
   late List<String> labels;
-
   int currentIndex = 0;
-
   @override
   Widget build(BuildContext context) {
     final text = AppLocalizations.of(context)!;

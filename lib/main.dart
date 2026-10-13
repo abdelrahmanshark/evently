@@ -1,9 +1,11 @@
 import 'package:evently/providers/app_local_provider.dart';
 import 'package:evently/providers/app_theme_provider.dart';
+import 'package:evently/providers/event_map_provider.dart';
 import 'package:evently/providers/my_user_provider.dart';
 import 'package:evently/ui/authentication/login/login_screen.dart';
 import 'package:evently/ui/authentication/register/register_screen.dart';
 import 'package:evently/ui/home/add_event/add_event.dart';
+import 'package:evently/ui/home/add_event/event_map.dart';
 import 'package:evently/ui/home/home_screen.dart';
 import 'package:evently/ui/home/tabs/profile/my_events.dart';
 import 'package:evently/ui/home/tabs/profile/profile_tab.dart';
@@ -71,7 +73,13 @@ class Evently extends StatelessWidget {
         AppRoutes.profileTabRouteName: (context) => ProfileTab(),
         AppRoutes.homeScreenRouteName: (context) => HomeScreen(),
         AppRoutes.registerScreensRouteName: (context) => RegisterScreen(),
-        AppRoutes.addEventScreenRouteName: (context) => AddEvent(),
+        AppRoutes.addEventScreenRouteName: (context) => ChangeNotifierProvider(
+          create: (context) => PickLocationProvider(),
+            child: AddEvent()),
+        AppRoutes.eventMapRouteName :(context) {
+          PickLocationProvider provider = ModalRoute.of(context)?.settings.arguments as PickLocationProvider;
+          return EventMap(pickLocationProvider:provider);
+        },
         AppRoutes.myEventsRouteName: (context) => MyEvents(),
       },
     );

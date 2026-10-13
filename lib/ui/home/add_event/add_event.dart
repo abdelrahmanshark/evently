@@ -2,9 +2,11 @@ import 'dart:ui' as ui;
 
 import 'package:easy_date_timeline/easy_date_timeline.dart';
 import 'package:evently/models/events.dart';
+import 'package:evently/providers/event_map_provider.dart';
 import 'package:evently/providers/my_user_provider.dart';
 import 'package:evently/ui/home/add_event/widgets/choose_date_or_time.dart';
 import 'package:evently/utils/app_colors.dart';
+import 'package:evently/utils/app_routes.dart';
 import 'package:evently/utils/app_styles.dart';
 import 'package:evently/utils/fire_base_utils.dart';
 import 'package:evently/wigets/custom_elevated_button.dart';
@@ -37,11 +39,13 @@ class _AddEventState extends State<AddEvent> {
   TextEditingController? descriptionController = TextEditingController();
   final formKey = GlobalKey<FormState>();
 
+
   @override
 
   @override
   @override
   Widget build(BuildContext context) {
+    final pickLocationProvider = Provider.of<PickLocationProvider>(context);
     var appConst = AppConst(context);
     List<String> eventsCategories = [
       'sport',
@@ -199,7 +203,9 @@ class _AddEventState extends State<AddEvent> {
               CustomElevatedButton(
                 backGroundColor: Colors.transparent,
                 borderColor: AppColors.primaryColor,
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, AppRoutes.eventMapRouteName,arguments: pickLocationProvider);
+                },
                 child: Row(
                   children: [
                     Container(
@@ -217,7 +223,16 @@ class _AddEventState extends State<AddEvent> {
                       ),
                     ),
                     SizedBox(width: 12),
-                    Text('ciro , egypt', style: AppStyles.primaryMed16),
+                    Expanded(
+                      child: Text(pickLocationProvider.eventLocation==null?
+                          appConst.text.tap_on_location_to_select
+                          :'${pickLocationProvider.country} , ${pickLocationProvider.city}'
+
+                          , style: AppStyles.primaryMed16,
+                        softWrap: true,
+
+                      ),
+                    ),
                     Spacer(),
                     Icon(
                       Icons.arrow_forward_ios_sharp,

@@ -1,3 +1,4 @@
+import 'package:evently/providers/map_provider.dart';
 import 'package:evently/providers/my_user_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -29,4 +30,6 @@ class AppConst {
   double get height => MediaQuery.of(context).size.height;
 
   double get width => MediaQuery.of(context).size.width;
+
+  MapProvider get mapProvider => Provider.of<MapProvider>(context);
 }
